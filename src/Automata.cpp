@@ -36,12 +36,13 @@ void Automata::off() {
 	}
 }
 
-void Automata::coin(unsigned int money) {
+unsigned int Automata::coin(unsigned int money) {
 	if (state == WAIT || state == ACCEPT) {
 		state = ACCEPT;
 		cash += money;
 		cout << "The current balance is: " << cash << endl;
 	}
+	return cash;
 }
 
 void Automata::printMenu() {

@@ -20,7 +20,7 @@ public:
 	Automata();
 	void on();
 	void off();
-	void coin(unsigned int money);
+	unsigned int coin(unsigned int money);
 	void printMenu();
 	void printState();
 	void choice(unsigned int drink_num);
