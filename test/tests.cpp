@@ -29,8 +29,8 @@ TEST(lab4, state_test1)
 {
 	Automata hotdrinks;	
 	hotdrinks.on();
-	std::string current_state = getState();
-	str::string expected = "WAIT";
+	std::string current_state = hotdrinks.getState();
+	std::string expected = "WAIT";
 	EXPECT_EQ(expected, current_state);	
 }
 
