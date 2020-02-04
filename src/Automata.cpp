@@ -40,7 +40,7 @@ unsigned int Automata::coin(unsigned int money) {
 	if (state == WAIT || state == ACCEPT) {
 		state = ACCEPT;
 		cash += money;
-		cout << "The current balance is: " << cash << endl;
+		printBalance();
 	}
 	return cash;
 }
@@ -53,7 +53,20 @@ void Automata::printMenu() {
 }
 
 void Automata::printState() {
+	cout << "List of avaliable drinks: " << endl;
 	cout << state_text[state] << endl;
+}
+
+std::string Automata::getState() {
+	return state_text[state];
+}
+
+void Automata::printBalance() {
+	cout << "The current balance is: " << cash << endl;
+}
+
+unsigned int Automata::getBalance() {
+	return cash;
 }
 
 void Automata::choice(unsigned int drink_num){

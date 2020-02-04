@@ -5,14 +5,13 @@ using namespace std;
 
 int main() {
 	Automata hotdrinks;
-	hotdrinks.on();	
-	hotdrinks.printState();
+	string current_state;
+	
+	hotdrinks.on();
 	hotdrinks.printMenu();
-	hotdrinks.printState();
-	hotdrinks.coin(20);
 	hotdrinks.coin(10);
-	hotdrinks.choice(1);
-
+	hotdrinks.coin(50);
+	hotdrinks.choice(7);
 	hotdrinks.off();
 	return 0;	
 }

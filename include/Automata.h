@@ -23,6 +23,9 @@ public:
 	unsigned int coin(unsigned int money);
 	void printMenu();
 	void printState();
+	string getState();
+	void printBalance();
+	unsigned int getBalance();
 	void choice(unsigned int drink_num);
 	void cancel();
 };
