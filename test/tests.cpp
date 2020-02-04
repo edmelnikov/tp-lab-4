@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "Automata.h"
 
-TEST(lab4, balance_test1) //Testing balance sum
+TEST(lab4, balance_test1) 
 {Am I even doing it right
     Automata hotdrinks;
 	
@@ -12,7 +12,7 @@ TEST(lab4, balance_test1) //Testing balance sum
     EXPECT_EQ(expected, current_balance);
 }
 
-TEST(lab4, balance_test2) //Testing amount of money after cooking
+TEST(lab4, balance_test2) 
 {
     Automata hotdrinks;
 	
@@ -25,7 +25,7 @@ TEST(lab4, balance_test2) //Testing amount of money after cooking
     EXPECT_EQ(expected, current_balance);
 }
 
-TEST(lab4, state_test1) //Testing the state after turning on
+TEST(lab4, state_test1) 
 {
 	Automata hotdrinks;	
 	hotdrinks.on();
@@ -34,7 +34,7 @@ TEST(lab4, state_test1) //Testing the state after turning on
 	EXPECT_EQ(expected, current_state);	
 }
 
-TEST(lab4, state_test2) { //testing the state after depositing money 
+TEST(lab4, state_test2) { 
 	Automata hotdrinks;	
 	hotdrinks.on();
 	hotdrinks.coin(15);
@@ -44,7 +44,7 @@ TEST(lab4, state_test2) { //testing the state after depositing money
 	
 }
 
-TEST(lab4, state_test3){ //testing cancel() method 
+TEST(lab4, state_test3){ 
 	Automata hotdrinks;	
 	hotdrinks.on();
 	hotdrinks.coin(15);
@@ -55,9 +55,9 @@ TEST(lab4, state_test3){ //testing cancel() method
 	
 }
 
-//Am I even doing this right?
 
-TEST(lab4, state_test4){ //testing the case when there is not enough money
+
+TEST(lab4, state_test4){ 
 	Automata hotdrinks;	
 	hotdrinks.on();
 	hotdrinks.printMenu();
@@ -69,5 +69,4 @@ TEST(lab4, state_test4){ //testing the case when there is not enough money
 	EXPECT_EQ(expected, current_state);
 }
 
-//Hmm what else should I test... It's 1 AM btw
 
